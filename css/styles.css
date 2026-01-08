@@ -1,0 +1,165 @@
+/* Custom Styles for Vivian Floristeria */
+
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #494949; /* Dark Charcoal */
+    background-color: #FCFBF9; /* Off-white background */
+}
+
+/* Header and Navigation */
+.navbar-brand {
+    font-weight: bold;
+    color: #BC8F8F !important; /* Dusty Rose for brand */
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #555 !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #BC8F8F !important; /* Dusty Rose on hover */
+}
+
+.nav-item .active {
+    color: #BC8F8F !important; /* Active link in Dusty Rose */
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../assets/portada.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-section p.lead {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero-section .btn-primary {
+    background-color: #BC8F8F; /* Dusty Rose */
+    border-color: #BC8F8F;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.hero-section .btn-primary:hover {
+    background-color: #C08081; /* Slightly darker Dusty Rose */
+    border-color: #C08081;
+}
+
+/* Card Styling for Arrangements and Services */
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #BC8F8F;
+    border-color: #BC8F8F;
+}
+
+.btn-primary:hover {
+    background-color: #C08081;
+    border-color: #C08081;
+}
+
+.btn-secondary {
+    background-color: #C08081;
+    border-color: #C08081;
+}
+
+.btn-secondary:hover {
+    background-color: #BC8F8F;
+    border-color: #BC8F8F;
+}
+
+/* Footer */
+footer {
+    background-color: #333333 !important; /* Dark grey background */
+    color: #f8f9fa !important;
+    padding: 20px 0;
+    margin-top: 50px;
+    border-top: 3px solid #BC8F8F; /* Dusty Rose top border */
+}
+
+footer a {
+    color: #f8f9fa !important;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #BC8F8F !important;
+    text-decoration: underline;
+}
+
+/* Contact Page Specific */
+.map-placeholder {
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6c757d;
+    font-size: 1.2rem;
+}
+
+/* Service Item Styling */
+.service-item h3 {
+    color: #BC8F8F;
+    margin-top: 15px;
+}
+
+.service-item p {
+    color: #555;
+}
+
+/* Tab Navigation for Arreglos Page */
+.nav-pills .nav-link {
+    color: #555;
+    background-color: #e9ecef;
+    margin: 0 5px;
+    border-radius: 0.25rem;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+    color: #fff;
+    background-color: #BC8F8F;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p.lead {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Vivian's Floristería</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Vivian's Floristería & Eventos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="arreglos.html">Arreglos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h1 class="text-center mb-4">Contáctanos</h1>
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <p class="text-center mb-4">Estamos aquí para ayudarte a crear el evento perfecto o el arreglo floral ideal. ¡Contáctanos para una cotización o cualquier consulta!</p>
+
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Número de Teléfono</label>
+                        <input type="tel" class="form-control" id="telefono">
+                    </div>
+                    <div class="mb-3">
+                        <label for="tipoConsulta" class="form-label">Tipo de Consulta</label>
+                        <select class="form-select" id="tipoConsulta">
+                            <option selected>Selecciona una opción</option>
+                            <option value="arreglos">Arreglos Florales/Frutales</option>
+                            <option value="bodas">Decoración de Bodas</option>
+                            <option value="quinceaneras">Decoración de Quinceañeras</option>
+                            <option value="cumpleanos">Decoración de Cumpleaños</option>
+                            <option value="bautizos">Decoración de Bautizos</option>
+                            <option value="carros">Decoración de Carros Alegóricos</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+
+                <div class="mt-5 text-center">
+                    <h5>Nuestra Ubicación</h5>
+                    <p>Puedes encontrarnos en:</p>
+                    <p>Dirección de Ejemplo, Ciudad, País</p>
+                    <p>Teléfono: <a href="tel:+1234567890">123-456-7890</a></p>
+                    <p>Email: <a href="mailto:info@vivianfloristeria.com">info@vivianfloristeria.com</a></p>
+                    <div class="map-placeholder border border-secondary" style="height: 300px; width: 100%;">
+                        <!-- Aquí iría un mapa incrustado de Google Maps u otro servicio -->
+                        <p class="text-muted mt-5">Placeholder para Google Maps</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2026 Vivian's Floristería & Eventos. Todos los derechos reservados.</p>
+            <div class="social-icons mt-3">
+                <h5>Síguenos</h5>
+                <a href="#" class="text-white mx-2 fs-4"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white mx-2 fs-4"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white mx-2 fs-4"><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
