@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arreglos - Vivian's Floristería</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="index.html">Vivian's Floristería & Eventos</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -25,10 +29,10 @@
                             <a class="nav-link" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="arreglos.html">Arreglos</a>
+                            <a class="nav-link" href="servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="servicios.html">Servicios</a>
+                            <a class="nav-link active" aria-current="page" href="arreglos.html">Arreglos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contacto.html">Contacto</a>
@@ -40,97 +44,149 @@
     </header>
 
     <main class="container my-5">
-        <h1 class="text-center mb-4">Nuestros Arreglos</h1>
+        <h1 class="text-center mb-4">Nuestras Creaciones</h1>
 
         <!-- Categorías de Arreglos -->
         <ul class="nav nav-pills justify-content-center mb-4" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pills-florales-tab" data-bs-toggle="pill" data-bs-target="#pills-florales" type="button" role="tab" aria-controls="pills-florales" aria-selected="true">Florales</button>
+                <button class="nav-link active" id="pills-florales-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-florales" type="button" role="tab" aria-controls="pills-florales"
+                    aria-selected="true">Florales</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-arcos-tab" data-bs-toggle="pill" data-bs-target="#pills-arcos" type="button" role="tab" aria-controls="pills-frutales" aria-selected="false">Arcos</button>
+                <button class="nav-link" id="pills-arcos-tab" data-bs-toggle="pill" data-bs-target="#pills-arcos"
+                    type="button" role="tab" aria-controls="pills-frutales" aria-selected="false">Arcos</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-mixtos-tab" data-bs-toggle="pill" data-bs-target="#pills-mixtos" type="button" role="tab" aria-controls="pills-mixtos" aria-selected="false">Mixtos</button>
+                <button class="nav-link" id="pills-eventos-tab" data-bs-toggle="pill" data-bs-target="#pills-eventos"
+                    type="button" role="tab" aria-controls="pills-eventos" aria-selected="false">Eventos</button>
             </li>
         </ul>
 
         <div class="tab-content" id="pills-tabContent">
             <!-- Arreglos Florales -->
-            <div class="tab-pane fade show active" id="pills-florales" role="tabpanel" aria-labelledby="pills-florales-tab">
+            <div class="tab-pane fade show active" id="pills-florales" role="tabpanel"
+                aria-labelledby="pills-florales-tab">
                 <div class="row">
                     <div class="col-md-4 mb-4">
-                        <div class="card">
+                        <div class="card arreglo-card">
                             <img src="assets/ramo.jpg" class="card-img-top" alt="Arreglo Floral 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Ramo de Rosas</h5>
-                                <p class="card-text">Un clásico atemporal para expresar amor y cariño.</p>
+                            <div class="card-overlay">
+                                <h5 class="card-title">Clásico Ramo de Rosas</h5>
+                                <p class="card-text">Un clásico que nunca falla. La forma más pura de expresar amor y
+                                    cariño con rosas frescas y radiantes.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <div class="card">
+                        <div class="card arreglo-card">
                             <img src="assets/centro de mesa.jpg" class="card-img-top" alt="Arreglo Floral 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Centro de Mesa Tropical</h5>
-                                <p class="card-text">Colores vibrantes para darle vida a cualquier espacio.</p>
+                            <div class="card-overlay">
+                                <h5 class="card-title">Centro de Mesa Vibrante</h5>
+                                <p class="card-text">Dale un toque de color y vida a cualquier espacio con nuestros
+                                    centros de mesa llenos de flores frescas y vibrantes.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="https://via.placeholder.com/300x200/ADFF2F/000000?text=Floral+3" class="card-img-top" alt="Arreglo Floral 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Canasta de Orquídeas</h5>
-                                <p class="card-text">Elegancia y sofisticación en cada detalle.</p>
+                        <div class="card arreglo-card">
+                            <img src="assets/ramo de novia.jpeg" class="card-img-top" alt="Arreglo Floral 3">
+                            <div class="card-overlay">
+                                <h5 class="card-title">Ramo de Novia Redondo</h5>
+                                <p class="card-text">Un diseño clásico y elegante para la novia moderna. Este ramo
+                                    redondo complementará tu vestido a la perfección.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card arreglo-card">
+                            <img src="assets/novia cascada.jpeg" class="card-img-top" alt="Arreglo Floral 3">
+                            <div class="card-overlay">
+                                <h5 class="card-title">Ramo de Novia en Cascada</h5>
+                                <p class="card-text">Para un look más dramático y sofisticado, nuestro ramo en cascada
+                                    es la elección ideal. Una verdadera obra de arte floral.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Arreglos Frutales -->
+            <!-- Arreglos Arcos -->
             <div class="tab-pane fade" id="pills-arcos" role="tabpanel" aria-labelledby="pills-aarcos-tab">
                 <div class="row">
                     <div class="col-md-4 mb-4">
-                        <div class="card">
+                        <div class="card arreglo-card">
                             <img src="assets/arco de corazon.jpg" class="card-img-top" alt="Arreglo Frutal 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Corazón</h5>
-                                <p class="card-text">Decoración de arco  en forma de corazón.</p>
+                            <div class="card-overlay">
+                                <h5 class="card-title">Arco de Corazón</h5>
+                                <p class="card-text">Un romántico arco en forma de corazón, perfecto para bodas,
+                                    aniversarios o cualquier celebración de amor.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <div class="card">
+                        <div class="card arreglo-card">
                             <img src="assets/arco redondo.jpg" class="card-img-top" alt="Arreglo Frutal 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Redondo</h5>
-                                <p class="card-text">Decoración de arco, con girasoles.</p>
+                            <div class="card-overlay">
+                                <h5 class="card-title">Arco Redondo</h5>
+                                <p class="card-text">Un arco redondo y alegre, decorado con girasoles que irradian
+                                    felicidad. Ideal para eventos al aire libre.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <div class="card">
+                        <div class="card arreglo-card">
                             <img src="assets/arcos rectangular.jpg" class="card-img-top" alt="Arreglo Frutal 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Rectangular</h5>
-                                <p class="card-text">Decoración de arco rectangular.</p>
+                            <div class="card-overlay">
+                                <h5 class="card-title">Arco Rectangular</h5>
+                                <p class="card-text">Un arco de líneas modernas y elegantes. Perfecto como fondo para
+                                    ceremonias, fotomatones o mesas principales.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Arreglos Mixtos -->
-            <div class="tab-pane fade" id="pills-mixtos" role="tabpanel" aria-labelledby="pills-mixtos-tab">
+            <!-- Arreglos Eventos -->
+            <div class="tab-pane fade" id="pills-eventos" role="tabpanel" aria-labelledby="pills-eventos-tab">
                 <div class="row">
                     <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="https://via.placeholder.com/300x200/BA55D3/000000?text=Mixto+1" class="card-img-top" alt="Arreglo Mixto 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Armonía Floral y Frutal</h5>
-                                <p class="card-text">Rosas y fresas bañadas en chocolate, una combinación exquisita.</p>
+                        <div class="card arreglo-card">
+                            <img src="assets/coronacion.jpeg" class="card-img-top" alt="Arreglo Mixto 1">
+                            <div class="card-overlay">
+                                <h5 class="card-title">Coronaciones y Reinados</h5>
+                                <p class="card-text">Diseñamos escenarios espectaculares para la elección y coronación
+                                    de reinas, asegurando un evento lleno de glamour y elegancia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card arreglo-card">
+                            <img src="assets/graduacion.jpeg" class="card-img-top" alt="Arreglo Mixto 1">
+                            <div class="card-overlay">
+                                <h5 class="card-title">Celebraciones de Graduación</h5>
+                                <p class="card-text">Celebra tus logros con una decoración a la altura. Creamos
+                                    ambientes festivos y sofisticados para tu graduación.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card arreglo-card">
+                            <img src="assets/altar.jpg" class="card-img-top" alt="Arreglo Mixto 1">
+                            <div class="card-overlay">
+                                <h5 class="card-title">Diseño de Altares</h5>
+                                <p class="card-text">Creamos altares y espacios sagrados con un profundo respeto y
+                                    atención al detalle, utilizando flores para honrar y conmemorar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card arreglo-card">
+                            <img src="assets/bodas.jpg" class="card-img-top" alt="Arreglo Mixto 1">
+                            <div class="card-overlay">
+                                <h5 class="card-title">Decoración Integral de Bodas</h5>
+                                <p class="card-text">Desde la ceremonia hasta la recepción, nos encargamos de cada
+                                    detalle floral para que el día de tu boda sea absolutamente perfecto.</p>
                             </div>
                         </div>
                     </div>
@@ -144,16 +200,22 @@
             <p>&copy; 2026 Vivian's Floristería & Eventos. Todos los derechos reservados.</p>
             <div class="social-icons mt-3">
                 <h5>Síguenos</h5>
-                <a href="#" class="text-white mx-2 fs-4"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="text-white mx-2 fs-4"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="text-white mx-2 fs-4"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.tiktok.com/@vivianfloristeria?is_from_webapp=1&sender_device=pc"
+                    class="text-white mx-2 fs-4"><i class="bi bi-tiktok"></i></a>
+                <a href="https://www.facebook.com/servieventosVivi/" class="text-white mx-2 fs-4"><i
+                        class="bi bi-facebook"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=593988518694&text=Hola%2C%20...."
+                    class="text-white mx-2 fs-4"><i class="bi bi-whatsapp"></i></a>
             </div>
         </div>
     </footer>
 
     <!-- Bootstrap JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <!-- Custom JS -->
     <script src="js/scripts.js"></script>
 </body>
+
 </html>
